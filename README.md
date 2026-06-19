@@ -1,18 +1,12 @@
-## Getting Started
+Practica: Clases Genericas Java
+Datos del Estudiante
+Nombre: Nicolás Aguilar
+Fecha: 19/06/2026
+Grupo: 1
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+1. Creacion de arboles de numeros y de personas
+FECHA: 17/06/2026 Descripción: En esta practica lo que hicimos fue crear un arbol de tipo entero, luego procedimos a crear el metodo para poder agregar nodos y que se vaya creando un arbol en orden, menores a izquierda y mayores a derecha, todo esto con recursividad.
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+2. Creacion de preOrder, posOrder e inOrder
+FECHA: 19/06/2026 Descripción:
+Empezamos creando el posorder, preOrder e inOrder en el arbol de enteros, luego creamos la forma de calcular su altura y peso. Luego creamos un arbol de tipo generico y luego lo hicimos de tipo persona, modificamos su compareTo para que compare por edad y si son iguales se compare alfabeticamente.
