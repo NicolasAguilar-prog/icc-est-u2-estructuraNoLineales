@@ -51,6 +51,10 @@ public class BinaryTree<T extends Comparable<T>> {
         return actual;
     }
 
+
+
+
+
     public void preOrder(){
         preOrderRecursivo(root);
     }
@@ -71,9 +75,8 @@ public class BinaryTree<T extends Comparable<T>> {
         if(actual == null)
             return;
     
-        
-        posOrderRecursivo(actual.getLeft());
         posOrderRecursivo(actual.getRight());
+        posOrderRecursivo(actual.getLeft());
         System.out.print(actual+ ",");
     }
 
@@ -111,4 +114,22 @@ public class BinaryTree<T extends Comparable<T>> {
         return peso;
 
     }
+
+    public void prinTree(){
+        printTreeRecursivo(root, 0);
+    }
+    public void printTreeRecursivo(Node<T> actual, int nivel){
+        if(actual == null)
+            return;
+        printTreeRecursivo(actual.getRight(),nivel+1);
+        for (int i = 0; i < nivel; i++) {
+            System.out.print("\t"); 
+        }
+        System.out.println(actual);  
+        printTreeRecursivo(actual.getLeft(),nivel+1);
+          
+    }
+
+ 
+
 }

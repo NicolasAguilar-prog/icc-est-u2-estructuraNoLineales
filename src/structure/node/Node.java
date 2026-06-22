@@ -46,6 +46,6 @@ public class Node<T> {
     
     @Override
     public String toString() {
-        return "Node [" + value + "]";   
+        return " [" + value + "]";   
     }
 }

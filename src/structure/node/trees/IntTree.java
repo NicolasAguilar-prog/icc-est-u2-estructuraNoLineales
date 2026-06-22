@@ -72,6 +72,8 @@ public class IntTree {
         System.out.print(actual+ ",");
     }
 
+
+
     public void inOrder(){
         inOrderRecursivo(root);
     }
