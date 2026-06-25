@@ -30,3 +30,12 @@ En el ejercicio 2 hicimos lo mismo de crear un arbol pero esta vez al ejercicio 
 Se debe printear el arbol antes de invertirlo y luego de, tal que asi:
 
 ![alt text](src/img/consola2.png)
+
+# Clase 4
+4. Resolucion de ejercicios 4 y 5
+
+Fecha: 24/06/2026
+
+Descripcion:
+Se hizo el ejercicio 3 y 4, en el 3 se printeaba los nodos que tenia por cada nivel, para lo cual se creó un algoritmo para saber el nivel del arbol, luego fuimos viendo que nodo tenia que nivel y se lo printeaba, eso se lo hizo con colas.
+El ejercicio 4 fue solo saber el nivel del arbol, algortmo que ya teniamos antes en el 3.

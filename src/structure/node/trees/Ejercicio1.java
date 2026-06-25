@@ -14,7 +14,7 @@ public class Ejercicio1 {
         tree.prinTree();
 
     }
-    //imprimir arbol
+
 
 
 }
