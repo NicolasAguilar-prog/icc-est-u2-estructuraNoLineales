@@ -1,9 +1,12 @@
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Set;
 
 import collections.maps.Maps;
 import collections.set.Sets;
+import evaluacion.PersonaController;
+import evaluacion.Personaa;
 import models.Contacto;
 import models.Persona;
 import structure.node.Node;
@@ -18,9 +21,36 @@ public class App {
     public static void main(String[] args) throws Exception {
         // runIntTree();
         // runBinaryTree();
-        runEjercicios();
-        runSets();
+        // runEjercicios();
+        // runSets();
+        runEvaluacion();
     }
+
+    private static void runEvaluacion(){
+
+        //EJERCICIO 1
+        List<Personaa> lista = new ArrayList<>();
+        lista.add(new Personaa("Nicolas", 18));
+        lista.add(new Personaa("Nicolas", 18));
+        lista.add(new Personaa("Juan", 17));
+        lista.add(new Personaa("Carlos", 20));
+        lista.add(new Personaa("Ricardo", 25));
+        PersonaController pers= new PersonaController();
+        System.out.println(pers.filtrarYOrdenar(lista, 18));
+
+        //EJERCICIO 2
+        List<Personaa> lisst = new ArrayList<>();
+        lisst.add(new Personaa("Nicolas Aguilar", 28));
+        lisst.add(new Personaa("Nicolas Aguirre", 38));
+        lisst.add(new Personaa("Juan Medina", 77));
+        lisst.add(new Personaa("Carlos Tello", 60));
+        lisst.add(new Personaa("Ricardo Uzhca", 25));
+        PersonaController perso= new PersonaController();
+        System.out.println(perso.agruparPorEdad(lisst));
+
+    }
+
+
 
     private static void runSets() {
         Sets sets = new Sets();
