@@ -1,6 +1,8 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Set;
 
+import collections.maps.Maps;
 import collections.set.Sets;
 import models.Contacto;
 import models.Persona;
@@ -10,7 +12,7 @@ import structure.node.trees.Ejercicio1;
 import structure.node.trees.Ejercicio2;
 import structure.node.trees.Ejercicio3;
 import structure.node.trees.Ejercicio4;
-import structure.node.trees.IntTree;
+
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -49,14 +51,19 @@ public class App {
         Set<Contacto> hCSet = sets.construirHashSetCOntacto();
         System.out.println(hCSet);
         System.out.println("Size= "+ hCSet.size());
-        System.out.println(hCSet.contains("F"));
+
 
         //Implementacion -> TreeContactoSet hashcode
         System.out.println("* HashCode");
         Set<Contacto> cTreeSet = sets.construirTreeSetContacto();
         System.out.println(cTreeSet);
         System.out.println("Size= "+ cTreeSet.size());
-        System.out.println(cTreeSet.contains("F"));
+        
+
+        System.out.println("MAP");
+        Maps m = new Maps();
+        m.contruirMap();
+        m.cTreeMap();
     }
 
     private static void runEjercicios(){
